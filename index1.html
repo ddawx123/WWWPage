@@ -1,0 +1,164 @@
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>小丁工作室-官方门户首页</title>
+		<meta charset="utf-8" />
+		<meta name="theme-color" content="rgba(#6bd7ff, 1)">
+		<link rel="icon" type="image/ico" href="favicon.ico">
+		<link rel="icon" sizes="192x192" href="favicon-highres.png">
+        <meta name="description" content="小丁工作室官方门户,丁鼎的个人网站引导页面,为科学奋斗终身的IT码农~。" />
+        <meta name="keywords" content="小丁工作室官方门户,丁鼎的个人网站引导页面,为科学奋斗终身的IT码农~" />
+        <meta name="360-site-verification" content="df1246d0bce41e5a5ff06ccedf4dfb98" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		<!-- 搜狐快站|移动端跳转过程（暂不启用） -->
+		<!--
+		<link rel="alternate" type="application/vnd.wap.xhtml+xml" media="handheld" href="http://m.dingstudio.cn"/>
+        <script src="//kzcdn.itc.cn/res/skin/js/uaredirect.js?v=5.0" type="text/javascript"></script>
+        <script type="text/javascript">KZ.redirect("http://m.dingstudio.cn");</script>
+        -->
+        
+		<!-- 自定义的一些JS过程 -->
+		<script>
+		  /*
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','/assets/js/analytics.js','ga');
+
+		  ga('create', 'UA-75502308-1', 'auto');
+		  ga('send', 'pageview');
+		  */
+		  
+		  /**
+		   * 部分功能施工时的提示信息
+		   */
+		  function disShowDialog() {
+			swal({
+				title: '系统提醒',
+				type: 'error',
+				text: '亲，站长尚未开通此第三方服务哦！',
+				timer: 2000,
+				confirmButtonText: '好',
+				showConfirmButton: true
+			});
+		  }
+
+		  /**
+		   * 微信社交信息显示浮动层控制
+		   */
+		  function showWeiXinQrCode() {
+			swal({
+				title: '微信扫一扫添加好友',
+				type: 'info',
+				html: 'true',
+				text: '<img src="https://static2.dingstudio.cn/images/mmqrcode1503030487670.png" alt="微信扫我加好友" height="200" width="200" />',
+				confirmButtonText: '关闭',
+				showConfirmButton: true
+			});
+		  }
+
+		  /**
+		   * QQ社交信息显示浮动层控制
+		   */
+		  function showQQInfo() {
+			swal({
+				title: 'QQ扫一扫添加好友',
+				type: 'info',
+				html: 'true',
+				text: 'QQ号：954759397<br><img src="https://static2.dingstudio.cn/images/qrcode_954759397.jpg" alt="手Q扫我加好友" height="300" width="250" />',
+				confirmButtonText: '关闭',
+				showConfirmButton: true
+			});
+		  }
+		</script>
+		<!-- 页面局部原生AJAX切换专用过程 -->
+		<script src="assets/js/dingstudio-ajax.js" type="text/javascript"></script>
+		<!-- DingStudio Single Sign On Client -->
+		<script src="assets/js/ssoclient.js" type="text/javascript"></script>
+		<!-- 一句话JS程序原生AJAX运行过程 -->
+		<script src="assets/js/hitokoto.js" type="text/javascript"></script>
+		<!-- sweetalert开源交互式信息窗资源调入 -->
+		<script src="assets/js/sweetalert.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/js/sweetalert.css?v=js">
+		<!-- 百度站长平台-搜索引擎自动推送过程 -->
+		<script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?4cddbc89a9116e17fcebe919126e259a";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+	</head>
+	<body class="loading">
+		<script>load();</script>
+	    <!--<script>setTimeout(window.location.href='./20170127.html',5);</script>-->
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>小丁工作室</h1>
+						<p>
+							<span class="vss">D</span><span class="vss-h">ing'</span><span class="vss">s</span>
+							<span class="vss">S</span><span class="vss-h">tudio</span>
+						</p>
+						<nav>
+						<div id="urlist" align="center">
+							<!--<a href="http://blog.dingstudio.cn" target="_self">浅忆技术博客</a>|<a href="http://w.dingstudio.cn" target="_self">浅忆个人博客</a>|<a href="javascript:void(0);" onclick="goNews();" target="_self">公告中心</a>-->
+							<a href="http://blog.dingstudio.cn" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_self">技术博客</a>|<a href="http://old.dingstudio.cn" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_self">技术博客（旧版）</a>|<a href="http://w.dingstudio.cn" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_self">个人博客</a>|<a href="#/news.html" onclick="goNews();" target="_self">公告中心</a>|<a href="http://album.dingstudio.cn" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_self">个人相册</a>|<a href="http://mail.dingstudio.cn/third-login.php" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_blank">电邮系统</a>|<a href="http://help.dingstudio.cn" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_blank">留言中心</a>|<a href="javascript:void(0);" onclick="disShowDialog()" target="_self">更多站群</a>
+						</div>
+							<ul>
+								<li><a href="javascript:void(0);" onclick="showWeiXinQrCode()" target="_self" class="icon fa-weixin"><span class="label">WeChat</span></a></li>
+								<li><a href="javascript:void(0);" onclick="showQQInfo()" target="_self" class="icon fa-qq"><span class="label">QQ</span></a></li>
+								<li><a href="https://weibo.com/ddawx123" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_blank" class="icon fa-weibo"><span class="label">WeiBo</span></a></li>
+								<li><a href="https://twitter.com/_DavidDing" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_blank" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+								<li><a href="https://www.facebook.com/DingCloud" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_blank" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://github.com/ddawx123" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_blank" class="icon fa-github"><span class="label">Github</span></a></li>
+								<li><a href="mailto:ding@dingstudio.cn" target="_self" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+							</ul>
+							<br>
+							<!-- AJAX 一句话服务 基于hitokoto.js提供的服务 -->
+							<div id="hitokoto" style="font-size: 5px"></div>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<span id="copyright_info" class="copyright"><a href="copyright.html" onmousedown="this.href = this.href + '#ref=' + escape(document.location);" target="_self">&copy; DingStudio</a>&nbsp;&nbsp;&nbsp;<a href="https://passport.dingstudio.cn/sso/login.php?mod=caslogin&ref=portalindex" target="_self">用户中心</a></span>&nbsp;&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn">浙ICP备17013818号-1</a>&nbsp;&nbsp;&nbsp;<a href="http://www.upyun.com/?ref=dingstudio" target="_blank" rel="nofollow" title="站点镜像加速服务由又拍云提供支持"><img alt="站点镜像加速服务由又拍云提供支持" src="//static2.dingstudio.cn/images/upyun_logo.png" style="vertical-align: middle;height: 20px;"></a>
+					</footer>
+
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+
+		<script>
+			window.onload = function() { document.body.className = ''; }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+		<script>
+            (function(){
+                var bp = document.createElement('script');
+                var curProtocol = window.location.protocol.split(':')[0];
+                if (curProtocol === 'https') {
+                    bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+                }
+                else {
+                    bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+                }
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(bp, s);
+            })();
+        </script>
+	</body>
+</html>

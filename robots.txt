@@ -1,0 +1,32 @@
+# dingstudio-welcome-page robots.txt
+
+User-agent:  Baiduspider
+Allow: /
+Disallow: /assets/
+
+User-Agent:  Googlebot
+Allow: /
+Disallow: /assets/
+
+User-agent:  Bingbot
+Allow: /
+Disallow: /assets/
+
+User-Agent:  360Spider
+Allow: /
+Disallow: /assets/
+
+User-Agent:  Yisouspider
+Allow: /
+Disallow: /assets/
+
+User-Agent:  Sogouspider
+Allow: /
+Disallow: /assets/
+
+User-Agent:  Yahoo!  Slurp
+Allow: /
+Disallow: /assets/
+
+User-Agent:  *
+Disallow:  /
