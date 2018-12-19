@@ -13,7 +13,7 @@ xhr.onreadystatechange = function () {
         var musicId = xml.getElementsByTagName("data")[0].firstChild.nodeValue;
         document.getElementById('bgmusic').innerHTML = '\
         <audio src="//static2.dingstudio.cn/musics/' + musicId + '.mp3" controls="controls" autoplay="autoplay" loop="loop" height="100" width="100" type="audio/mp3">\
-        <embed height="100" width="100" src="//static2.dingstudio.cn/musics/' + musicId + '.mp3">\
+        <!--[if lte IE 8]><embed height="100" width="100" src="//static2.dingstudio.cn/musics/' + musicId + '.mp3"><![endif]-->\
         </audio>\
         ';
     }
