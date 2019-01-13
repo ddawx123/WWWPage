@@ -22,7 +22,7 @@ function checkSSO() {//Loading DingStudio SSO Api
             var authcode = authdata.getElementsByTagName("authcode")[0].firstChild.nodeValue;
             //alert(authcode);
             if (authcode == '0') {
-                document.getElementById("copyright_info").innerHTML = '<a href="copyright.html" target="_self">&copy;2012-' + new Date().getFullYear() + ' DingStudio</a>&nbsp;&nbsp;&nbsp;<a href="https://passport.dingstudio.cn/sso/login.php?mod=caslogin&returnUrl=' + encodeURIComponent(window.location.href) + '&ref=portalindex" target="_self" title="登录网站通行证" onclick="return showLoginForm()">用户登录</a>';
+                document.getElementById("copyright_info").innerHTML = '<a href="copyright.html" target="_self">&copy;2012-' + new Date().getFullYear() + ' DingStudio</a>&nbsp;&nbsp;&nbsp;<a href="https://passport.dingstudio.cn/sso/login.php?mod=caslogin&returnUrl=' + btoa(encodeURIComponent(window.location.href)) + '&ref=portalindex" target="_self" title="登录网站通行证" onclick="return showLoginForm()">用户登录</a>';
                 var visitor_js = document.createElement('script');
                 visitor_js.setAttribute('src', './assets/js/visitor.js');
                 document.getElementsByTagName('head')[0].appendChild(visitor_js);
@@ -71,7 +71,7 @@ function showLoginForm() {
         animation: "slide-from-bottom",
         showConfirmButton: true,
         confirmButtonText: "关闭",
-        text: '<iframe id="ifrmname" src="https://passport.dingstudio.cn/sso/iframelogin.php?mod=caslogin&returnUrl=' + encodeURIComponent(window.location.href) + '&ref=portalindex" height="160" width="360" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"></iframe>',
+        text: '<iframe id="ifrmname" src="https://passport.dingstudio.cn/sso/iframelogin.php?mod=caslogin&returnUrl=' + btoa(encodeURIComponent(window.location.href)) + '&ref=portalindex" height="160" width="360" marginheight="0" marginwidth="0" scrolling="no" frameborder="0"></iframe>',
         html: true
     }, function () {
         checkSSO();
